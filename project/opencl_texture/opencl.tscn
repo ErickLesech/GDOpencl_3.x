@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://opencl_texture/load_texture.gd" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="opencl_texture" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0309857, 0 )
+
+[node name="cube" type="MeshInstance" parent="."]
+transform = Transform( 0.490568, 0.857448, 0.155322, -0.856577, 0.507239, -0.0947839, -0.160058, -0.086547, 0.983307, -0.176746, -0.041914, -1.53319 )
+mesh = SubResource( 1 )
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.993861, 0.0426031, -0.102107, 0, 0.922889, 0.385067, 0.110638, -0.382703, 0.917223, -1.05916, 3.92601, 7.47 )
